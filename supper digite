@@ -1,0 +1,25 @@
+# c-project
+#include<stdio.h>
+int long long supper_digite(int n)
+{
+    int sum=0,digit;
+    if(n/10==0)
+        return n;
+    while(n!=0)
+    {
+        //digit=n%10;
+        sum=sum+n%10;
+        n=n/10;
+    }
+   return supper_digite(sum);
+
+}
+int main()
+{
+    int long long n;
+    printf("enter the number ");
+    scanf("%d",&n);
+    printf("supper_digite=%d\n",supper_digite(n));
+    return 0;
+}
+
